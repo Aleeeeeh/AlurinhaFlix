@@ -23,3 +23,10 @@ body {
 a {
   color: inherit;
 } 
+/* Para deixar o footer embaixo e o menu em cima normalmente, lembrando que no css do index da pasta pages/
+cadastro/video temos a propriedade flex:1, para que funcione certinho */
+#root{
+  min-height: calc(100vh - var(--bodyPaddingTop));/*Menu, conteudo e footer ocupe toda tela sem scroll*/
+  display: flex;
+  flex-direction: column;
+}
