@@ -64,60 +64,60 @@
           "url": "https://www.youtube.com/watch?v=ZpBrBop30m4"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Vis a Vis",
+          "url": "https://www.youtube.com/watch?v=td2T4s8L1xA"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Irmandade",
+          "url": "https://www.youtube.com/watch?v=xt11-wM_UdY"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Top Filmes",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
+        "text": "Top Filmes mais assistidos",
         "url": "https://www.alura.com.br/formacao-data-science"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Vingadores Ultimato",
+          "url": "https://www.youtube.com/watch?v=g6ng8iy-l0U"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Homem aranha de volta ao lar",
+          "url": "https://www.youtube.com/watch?v=2x-2iYxgMFU"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Harry potter e a ordem da fênix",
+          "url": "https://www.youtube.com/watch?v=6nzOej8jGgs"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Velozes e furiosos 9",
+          "url": "https://www.youtube.com/watch?v=NnDGWyfP7q4"
         }
       ]
     },
     {
-      "titulo": "Filmes",
+      "titulo": "Animes",
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Shigeki No Kiojin",
+          "url": "https://www.youtube.com/watch?v=r7OmEkdTaa0"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Boku no Hero",
+          "url": "https://www.youtube.com/watch?v=UOgsm_FoYSw"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Tower of god",
+          "url": "https://www.youtube.com/watch?v=TcYz4v1Y9ko"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "One punch Man",
+          "url": "https://www.youtube.com/watch?v=2JAElThbKrI"
         }
       ]
     },
@@ -125,7 +125,7 @@
       "titulo": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
+        "text": "Top Games para console e pc",
         "url": "https://www.alura.com.br/formacao-jogos-unity"
       },
       "videos": [
