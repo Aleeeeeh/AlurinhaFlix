@@ -1,0 +1,13 @@
+=== Instalando Eslint ===
+Este pacote ajuda a corrigir problemas no código javascript, inclusive momentos onde acusar erro ao usar código
+jsx em arquivo .js, onde podemos resolver entrando no arquivo do eslint e no rules colocar o seguinte código;
+Se persistir o erro verificar no canto inferior, onde está escrito crlf e deixar como lf.
+
+Comando básicos vsCode
+cltr + p abre caixa de texto, comandos como >reaload...reseta o vscode
+
+Para ativar o eslint, >eslint enable qualquer coisa no canto inferior direito, clicar e verificar as opções.
+No geral para resolvermos erro de sintaxe com eslint é só ir no ctrl + p, digitar > eslint fix all auto problem
+que será corrigido automaticamente.
+
+PropTypes nos ajuda a fazer a validação de forma automática sem a necessidade de fazer na mão.
