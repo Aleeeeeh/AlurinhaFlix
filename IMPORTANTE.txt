@@ -11,3 +11,14 @@ No geral para resolvermos erro de sintaxe com eslint é só ir no ctrl + p, digi
 que será corrigido automaticamente.
 
 PropTypes nos ajuda a fazer a validação de forma automática sem a necessidade de fazer na mão.
+
+
+Json-server depois de instalado criamos o arquivo db.json com alguns dados para trabalhar, não esquecer de ir
+no package.json e e nos script criar "server": "json-server --watch db.json --port8080" , depois para iniciar digitamos
+npm run server. No browser no localhost:3000/categorias por exemplo ja acessamos os dados de categorias escritos
+no arquivo de db.json.
+
+npm install --save-dev concurrently - Com isso conseguimos rodar duas coisas ao mesmo tempo, no exemplo o
+json-server e o react, depois de configurar desta forma no package.json "dev": "concurrently \"react-scripts start\" \"npm run server\"",
+depois disso demos o comando npm run dev, e o resultado nosso projeto rodando na porta 3000, e o server na porta
+8080.

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
@@ -8,7 +8,7 @@ function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: '#000',
+    cor: '#000000',
   };
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
@@ -25,6 +25,41 @@ function CadastroCategoria() {
     setValue(infosDoEvento.target.getAttribute('name'),
       infosDoEvento.target.value);
   }
+
+  // eslint-disable-next-line max-len
+  /* Chamamos essa função useEffect quando quisermos que um efeito colateral aconteça, 1° param o que a gente
+  quer que aconteça, o 2° opcional é quando a gente quer que aconteça */
+  useEffect(() => {
+    if (window.location.href.includes('localhost')) {
+      const URL = 'http://localhost:8080/categorias';
+      fetch(URL)
+        .then(async (respostaDoServer) => {
+          if (respostaDoServer.ok) {
+            const resposta = await respostaDoServer.json();
+            setCategorias(resposta);
+            return;
+          }
+          throw new Error('Não foi possível pegar os dados');
+        });
+    }
+  }, []);
+  // setTimeout(() => {
+  //   setCategorias([
+  //     ...categorias,
+  //     {
+  //       id: '1',
+  //       nome: 'Front End',
+  //       descricao: 'Vamos estudar Front End !',
+  //       cor: '#cbd1ff',
+  //     },
+  //     {
+  //       id: '2',
+  //       nome: 'Back End',
+  //       descricao: 'Vamos estudar Back End !',
+  //       cor: '#cbd1ff',
+  //     },
+  //   ]);
+  // }, 4 * 1000);
 
   return (
     <PageDefault>
@@ -84,11 +119,18 @@ function CadastroCategoria() {
         <Butoon>
           Cadastrar
         </Butoon>
+        {/* Enquanto não estiver buscado dados da categoria aparece Loading */}
+        {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+        )}
+
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
             {categoria.nome}
           </li>
         ))}

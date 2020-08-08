@@ -54,7 +54,7 @@ const Input = styled.input`
   
   &:focus {
     border-bottom-color: var(--primary);
-  }
+  }/* Quando clicamos no campo a letra da label diminui para escrevermos */
   &:focus:not([type='color']) + ${Label.Text} {
     transform: scale(.6) translateY(-10px);
   }
