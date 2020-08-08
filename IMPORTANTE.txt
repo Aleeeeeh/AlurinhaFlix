@@ -22,3 +22,11 @@ npm install --save-dev concurrently - Com isso conseguimos rodar duas coisas ao 
 json-server e o react, depois de configurar desta forma no package.json "dev": "concurrently \"react-scripts start\" \"npm run server\"",
 depois disso demos o comando npm run dev, e o resultado nosso projeto rodando na porta 3000, e o server na porta
 8080.
+
+Criamos o arquivo server.js colamos o código e no package.json trocamos nos scripts em server para:
+ node ./server.js
+ E no start trocar por npm run server, e quando dermos npm start no terminal irá executar normalmente o projeto.
+
+ Para colocarmos o projeto na HEROKU para que nosso backend também vá para o ar, é preciso que nosso start esteja
+ configurado para npm run server como citado acima, pois a HEROKU utiliza o start para subir para o ar e a vercel
+ utiliza o comando de build.
